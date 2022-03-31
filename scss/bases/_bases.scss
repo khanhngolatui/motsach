@@ -1,0 +1,103 @@
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+    @include for-size(991) {
+        font-size: 55%;
+    }
+    @include for-size(767) {
+        font-size: 47%;
+    }
+}
+
+body {
+    font: {
+        size: 1.5rem;
+        weight: 400;
+        family: "Manrope", sans-serif;
+    }
+    background-color: $color-background;
+    color: $color-text;
+    overflow-x: hidden;
+    line-height: 1.5;
+}
+
+section,
+header,
+footer {
+    max-width: 192rem;
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  // line-height: 1;
+  font-size: inherit;
+  font-weight: inherit;
+  font-weight: 700;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+dl,
+dt,
+dd,
+table,
+tr,
+td,
+figure,
+figcaption,
+label {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color:  inherit;
+    display: inline-block;
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+
+    }
+    &:focus,
+    &:active {
+        outline: none !important;
+    }
+}
+
+button {
+    cursor: pointer;
+    &:focus,
+    &:active,
+    &:hover,
+    &:visited,
+    &:link {
+        outline: none;
+        border: none;
+        border-radius: 0px;
+    }
+}

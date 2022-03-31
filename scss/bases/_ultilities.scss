@@ -1,0 +1,9 @@
+.container {
+    max-width: 100%;
+    padding: 0 7.5rem 0 0.6rem;
+    margin: 0 auto;
+    @include for-size (1200) {
+        max-width: 114rem;
+    }
+}
+

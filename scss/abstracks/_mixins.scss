@@ -1,0 +1,36 @@
+@mixin flex ($align: flex-start, $justify: flex-start, $wrap: nowrap) {
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+    flex-wrap: $wrap;
+}
+
+
+
+@mixin for-size($breakpoint) {
+    @if $breakpoint == 1350 {
+        @media (max-width: 1350px) {
+            @content;
+        }
+    }
+    @if $breakpoint == 1200 {
+        @media (max-width: 1200px) {
+            @content;
+        }
+    }
+    @if $breakpoint == 991 {
+        @media (max-width: 991px) {
+            @content;
+        }
+    }
+    @if $breakpoint == 992 {
+        @media (min-width: 992px) {
+            @content;
+        }
+    }
+    @if $breakpoint == 767 {
+        @media (max-width: 767px) {
+            @content;
+        }
+    }
+}

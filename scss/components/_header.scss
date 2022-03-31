@@ -1,0 +1,78 @@
+.section-header {
+    padding-top : 1rem;
+    padding-right: 2rem;
+    background-color: $color-background;
+    position: fixed;
+    top:0 ; left: 0; right: 0;
+    z-index: 999;
+}
+
+
+.container {
+    .navbar {
+       @include flex();
+       @include for-size(991) {
+           align-items: center;
+       }
+    }
+    .navbar__logo {
+        flex-grow: 5;
+    }
+    .navbar__text {
+        flex-grow: 1;
+        @include flex(flex-start, space-between);
+        @include for-size(991) {
+            position: absolute;
+            top: 110%;
+            right: 2rem;
+            padding: 1rem;
+            flex-direction: column;
+            align-items: center;
+            justify-content : center;
+            background-color: white;
+            border-radius: 0.3rem;
+        }
+    }
+}
+
+.navbar__list {
+    @include flex() ; 
+    margin-top: 1.2rem;
+    @include for-size(991) {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .nav-link {
+        padding: 1.2rem 3.4rem;
+        font-weight: 700;
+    }
+}
+
+.navbar__login {
+    font-size: 1.8rem;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $color-text;
+    gap: 1rem;
+    text-transform: uppercase;
+    .nav-link {
+        padding: 0.3rem ;
+    }
+}
+
+.menu-icon {
+    @include flex(center,center);
+    width: 3rem;
+    height: 3rem;
+    background-color: gray;
+    border-radius: 0.3rem;
+    color: white;
+    cursor: pointer;
+    @include for-size(992) {
+        display: none;
+    }
+}
+
