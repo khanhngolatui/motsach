@@ -267,12 +267,6 @@ input {
   border-radius: 50%;
   transform: translate(-115%, -50%);
 }
-.section-header.content .login-user span {
-  width: 1.3rem;
-  height: 1.3rem;
-  border-radius: 50%;
-  background-color: #A3CB38;
-}
 
 .section__hero-image {
   margin-top: 11.3rem;
@@ -283,7 +277,6 @@ input {
 }
 
 .section-footer {
-  margin-top: 10rem;
   padding: 3.5rem 9.5rem 1.8rem 2rem;
   border-top: 1px solid rgba(0, 0, 0, 0.3);
 }

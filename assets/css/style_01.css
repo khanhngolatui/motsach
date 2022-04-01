@@ -99,6 +99,10 @@ button:focus, button:active, button:hover, button:visited, button:link {
   border-radius: 0px;
 }
 
+input {
+  cursor: pointer;
+}
+
 .section-header {
   padding-top: 1rem;
   padding-right: 2rem;
@@ -216,6 +220,54 @@ button:focus, button:active, button:hover, button:visited, button:link {
   font-weight: 400;
 }
 
+.section-header.register .login,
+.section-header.register .register {
+  font-size: 1.8rem;
+  text-decoration: underline;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+.section-header.register .navbar__logo {
+  height: 10.1rem;
+}
+
+.section-header.content .navbar__logo {
+  flex-grow: 0;
+}
+.section-header.content .navbar {
+  padding: 0 0.6rem;
+  justify-content: space-between;
+}
+.section-header.content .navbar__list {
+  justify-content: center;
+  flex-grow: 1;
+}
+.section-header.content .nav-link {
+  padding: 1.2rem 1.4rem;
+}
+.section-header.content .navbar__login {
+  font-size: 1.5rem;
+  text-transform: none;
+}
+.section-header.content .login-name {
+  font-weight: 700;
+}
+.section-header.content .login-user {
+  color: #A3CB38;
+  position: relative;
+}
+.section-header.content .login-user::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 1.3rem;
+  height: 1.3rem;
+  background-color: #A3CB38;
+  border-radius: 50%;
+  transform: translate(-115%, -50%);
+}
+
 .section__hero-image {
   margin-top: 11.3rem;
   background-image: url("../images/hero-image.jpg");
@@ -225,7 +277,6 @@ button:focus, button:active, button:hover, button:visited, button:link {
 }
 
 .section-footer {
-  margin-top: 10rem;
   padding: 3.5rem 9.5rem 1.8rem 2rem;
   border-top: 1px solid rgba(0, 0, 0, 0.3);
 }

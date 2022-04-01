@@ -1,0 +1,108 @@
+.products__wraper {
+    @include flex() ; 
+    gap: 2rem;
+    padding: 2rem
+}
+
+.products__sidebar-left {
+    width: 20%;
+    // @include for-size(991) {
+    //     width: 25%;
+    // }
+    .sidebar__form {
+        @include flex(center);
+        gap: 1.6rem;
+        .input-search {
+            width: 100%;
+            height: 3.6rem;
+            border-radius: 5px;
+            border-width: 1px;
+            outline: none;  
+        }
+    }
+    .menu__list {
+        padding-right: 1.5rem;
+        padding-top: 1.8rem;
+        font-size: 1.6rem;
+        font-weight: 700;
+    }
+    .menu__item + .menu__item{
+        margin-top: 0.5rem;
+    }
+    .menu__item-link {
+        display: block;
+        padding: 1.6rem ;
+        background-color: $color-01;
+        border-radius: 0px 12px 12px 0px;   
+    }
+    .menu__item-link.active {
+       background-color: $color-02; 
+    }
+    .navbar-collapse {
+        padding-left: 3.9rem;
+        .link {
+            padding: 0.8rem;
+        }
+    }
+}
+
+.products__main {
+    width: 55%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem 4rem;
+    .pro__image {
+        position: relative;
+        &::before {
+            content: "";
+            display: block;
+            padding-top: 90%;
+        }
+        .image {
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .pro__text {
+        .text-title {
+            font-size: 1.4rem;
+            margin-top: 1rem;
+        }
+        .text-desc {
+            font-size: 1.2rem;
+            padding: 0.5rem 0;
+        }
+        .text-time {
+            font-size: 0.8rem;
+            color: $color-gray-37;
+        }
+    }
+}
+
+.products__sidebar-right {
+    width: 25%;
+    padding: 2rem 0;
+    
+    .sidebar-right__wraper {
+        border-left: 1px solid $color-border;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem 0;
+        padding: 0 2rem 2rem;
+    }
+    .sidebar-right__title {
+        font-size: 1.6rem;
+        margin-top: 0.5rem;
+    }
+    .sidebar-right__desc {
+        font-size: 1.2rem;
+        padding: 0.5rem 0;
+    }
+    img {
+        width: 100%;
+    }
+}
