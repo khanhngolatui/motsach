@@ -33,4 +33,9 @@
             @content;
         }
     }
+    @if $breakpoint == 676 {
+        @media (max-width: 676px) {
+            @content;
+        }
+    }
 }

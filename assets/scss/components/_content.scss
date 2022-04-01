@@ -5,6 +5,10 @@
 .content__wraper {
     @include flex();
     gap: 2rem;
+    .content__main {
+        flex-grow: 6;
+        padding-top: 1.5rem;
+    }
 }
 
 .content__sidebar {
@@ -49,12 +53,7 @@
     }
 }
 
-.content__main {
-    flex-grow: 6;
-    padding-top: 1.5rem;
-   
-    
-}
+
 
 .story__wraper {
     @include flex(flex-start, space-between, wrap);
@@ -87,6 +86,11 @@
         margin-top: 2.2rem;
         color: $color-opacity;
         font-size: 0.8rem;
+        @include for-size(767) {
+            display: block;
+            text-align: center;
+            margin: 0;
+        }
     }
     .story__image {
         position: relative;

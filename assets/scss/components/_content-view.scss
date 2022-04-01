@@ -1,0 +1,125 @@
+.view__wraper {
+    @include flex() ;
+    gap: 2.5rem;
+    padding: 4.5rem;
+}
+
+.view__book {
+    width: 30%;
+}
+
+.book__image {
+    position: relative;
+    &::before {
+        content: "";
+        display: block;
+        padding-top: 71.1%;
+    }
+    .image {
+        position: absolute;
+        top: 0; left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+    }
+}
+
+.book__desc {
+    font-size: 0.7rem;
+    color: $color-gray-50;
+    margin-top: 0.5rem;
+}
+
+.book__rating {
+    padding-top: 1.5rem;
+    .book__rating-box {
+        border-right: 1px solid $color-border;
+        padding-right: 1rem;
+        padding-bottom: 2rem;
+    }
+    .rating__desc {
+        font-size: 0.8rem;
+        padding-bottom: 1rem;
+        .rating-icon {
+            margin-right: 0.5rem;
+            background-color: white;
+            color: yellow;
+        }
+    }
+    .comments__wraper {
+        .comment-title {
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            border-top: 1px solid $color-border;
+            font-weight: 700;
+        }
+    }
+    .comment {
+        @include flex();
+        padding: 1rem 0;
+        gap: 0 1rem;
+        border-bottom: 1px solid $color-border;
+        .avatar-img {
+            width: 2.2rem;
+            height: 2.2rem;
+            border-radius: 50%;
+        }
+        .commment__author-name {
+            font-size: 0.8rem;
+            font-weight: 700;
+        }
+        .comment__time {
+            font-size: 0.5rem;
+            color: $color-gray-50;
+        }
+        .comment__content {
+            font-size: 0.7rem;
+            padding: 0.5rem 0;
+            text-align: justify;
+        }
+        .comment__loadmore {
+            font-size: 0.6rem;
+            font-weight: 700;
+        }
+        .comment__recommended {
+            margin-right: 1rem;
+        }
+    }
+}
+
+.view__content {
+    width: 70%;
+    .view__title {
+        font-size: 2rem;
+    }
+    .view__time {
+        span {
+            font-size: 0.8rem;
+            color: $color-gray-37;
+        }
+        span + span {
+            margin-left: 35rem;
+        }
+    }
+    .view__content-desc {
+        margin-top: 2rem;
+        strong {
+            font-size: 1.6rem;
+        }
+        p {
+            padding: 1rem 0;
+        }
+    }
+}
+
+.buy__book {
+    text-align: center;
+    padding-top: 5rem;
+    &-link {
+        padding: 0.45rem 2.85rem;
+        font-size: 1.2rem;
+        font-weight: 700;
+        background-color: $color-03;
+        text-transform: uppercase   ;
+    }
+}

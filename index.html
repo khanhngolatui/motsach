@@ -5,10 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mọt Sách</title>
-    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" type="text/css" href="scss/style.css"></link>
-    <link rel="stylesheet" type="text/css" href="scss/style.scss"></link>
+    <link rel="stylesheet" type="text/css" href="assets/css/style_01.css"></link>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 </head>
 <body>
@@ -20,7 +19,7 @@
                 <div class="navbar">
                     <div class="navbar__logo">
                         <a href="#" class="logo-link">
-                            <img srcset="./images/image01.png 2x" alt="" class="logo-image" />
+                            <img srcset="./assets/images/image01.png 2x" alt="" class="logo-image" />
                         </a>
                     </div>
                     <div class="navbar__text">
@@ -55,112 +54,114 @@
     <!-- HERO IMAGE : END -->
 
     <!-- CONTENT : START -->
-    <section class="section-content">
-        <div class="content__wraper">
-            <div class="content__sidebar">
-                <form class="sidebar__form" id="side__form"action="" name="side__form" method="post">
-                    <label for="input-search">Search</label>
-                    <input class="input-search" type="text" name="input-search" />
-                </form>
-                <ul class="menu__list">
-                    <li class="menu__item">
-                        <a class="menu__item-link active" href="#">Book types</a>
-                        <ul class="navbar-collapse">
-                            <li class="nav-item">
-                                <a class="link" href="#">Fiction</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="link" href="#">Bussiness</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="link" href="#">Christian</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="link" href="#">Biography</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="link" href="#">Fiction</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="link" href="#">Novel</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="link" href="#">Detective</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="link" href="#">Psycology</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__item-link" href="#">Authors</a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__item-link" href="#">New release</a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__item-link" href="#">New release</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="content__main">
-                <div class="story__wraper">
-                    <div class="story story-left">
-                        <div class="story__image">
-                            <img class="image" srcset="./images/content/image08.png 2x" alt="" />
+    <main id="wraper-content">
+        <section class="section-content">
+            <div class="content__wraper">
+                <div class="content__sidebar">
+                    <form class="sidebar__form" id="side__form"action="" name="side__form" method="post">
+                        <label for="input-search">Search</label>
+                        <input class="input-search" type="text" name="input-search" />
+                    </form>
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a class="menu__item-link active" href="#">Book types</a>
+                            <ul class="navbar-collapse">
+                                <li class="nav-item">
+                                    <a class="link" href="#">Fiction</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="link" href="#">Bussiness</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="link" href="#">Christian</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="link" href="#">Biography</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="link" href="#">Fiction</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="link" href="#">Novel</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="link" href="#">Detective</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="link" href="#">Psycology</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__item-link" href="#">Authors</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__item-link" href="#">New release</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__item-link" href="#">New release</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="content__main">
+                    <div class="story__wraper">
+                        <div class="story story-left">
+                            <div class="story__image">
+                                <img class="image" srcset="./assets/images/content/image08.png 2x" alt="" />
+                            </div>
+                            <div class="story_text">
+                                <h3 class="story__title">The Hidden Story of the North’s Victory in the Civil War</h3>
+                                <p class="story__desc size-lg">Roger Lowenstein’s “Ways and Means” offers a<br/> fresh perspective on the Civil War by explaining the importance.</p>
+                            </div>
+                            <span class="story__time">March 8, 2022   By ERIC FONER</span>
                         </div>
-                        <div class="story_text">
-                            <h3 class="story__title">The Hidden Story of the North’s Victory in the Civil War</h3>
-                            <p class="story__desc size-lg">Roger Lowenstein’s “Ways and Means” offers a<br/> fresh perspective on the Civil War by explaining the importance.</p>
+                        <div class="story story-right">
+                            <div class="story__image right">
+                                <img class="image" srcset="./assets/images/content/image09.png 2x" alt="" />
+                            </div>
+                            <div class="story__text">
+                                <h4 class="story__title">“He Got a Cigarette Stuck in His Neck, and He Took<br /> It Like a Man.’</h4>
+                                <p class="story__desc size-xs">Eli Cranor’s top-shelf debut, “Don’t Know Tough,” is Southern noir at its <br />finest, a cauldron of terrible choices and even more terrible outcomes.</p>
+                            </div>
+                        <span class="story__time">5 hours ago</span>
                         </div>
-                        <span class="story__time">March 8, 2022   By ERIC FONER</span>
                     </div>
-                    <div class="story story-right">
-                        <div class="story__image right">
-                            <img class="image" srcset="./images/content/image09.png 2x" alt="" />
+                    <div class="content__intro">
+                        <div class="intro__wraper">
+                            <div class="intro">
+                                <h3 class="intro__title">Fiction</h3>
+                                <div class="intro__image">
+                                    <img class="image" srcset="./assets/images/content/image41.png 2x" alt="" class="image" />
+                                </div>
+                                <p class="intro__desc">A Thriller Wrapped in a Story <br/>of Sisters and First Love</p>
+                            </div>
+                            <div class="intro">
+                                <h3 class="intro__title">Editors’ choice</h3>
+                                <div class="intro__image">
+                                    <img class="image" srcset="./assets/images/content/image42.png 2x" alt="" class="image" />
+                                </div>
+                                <p class="intro__desc">11 New Books We Recommend This Week</p>
+                            </div>
+                            <div class="intro">
+                                <h3 class="intro__title">Trending</h3>
+                                <div class="intro__image">
+                                    <img class="image" srcset="./assets/images/content/image43.png 2x" alt="" class="image" />
+                                </div>
+                                <p class="intro__desc">Best-Trending Lists: March 20, 2022</p>
+                            </div>
+                            <div class="intro">
+                                <h3 class="intro__title">Fiction</h3>
+                                <div class="intro__image">
+                                    <img class="image" srcset="./assets/images/content/image44.png 2x" alt="" class="image" />
+                                </div>
+                                <p class="intro__desc">The Long Shadow of Sandy Hook</p>
+                            </div>
                         </div>
-                        <div class="story__text">
-                            <h4 class="story__title">“He Got a Cigarette Stuck in His Neck, and He Took<br /> It Like a Man.’</h4>
-                            <p class="story__desc size-xs">Eli Cranor’s top-shelf debut, “Don’t Know Tough,” is Southern noir at its <br />finest, a cauldron of terrible choices and even more terrible outcomes.</p>
-                        </div>
-                      <span class="story__time">5 hours ago</span>
                     </div>
                 </div>
-                <div class="content__intro">
-                    <div class="intro__wraper">
-                        <div class="intro">
-                            <h3 class="intro__title">Fiction</h3>
-                            <div class="intro__image">
-                                <img class="image" srcset="./images/content/image41.png 2x" alt="" class="image" />
-                            </div>
-                            <p class="intro__desc">A Thriller Wrapped in a Story <br/>of Sisters and First Love</p>
-                        </div>
-                        <div class="intro">
-                            <h3 class="intro__title">Editors’ choice</h3>
-                            <div class="intro__image">
-                                <img class="image" srcset="./images/content/image42.png 2x" alt="" class="image" />
-                            </div>
-                            <p class="intro__desc">11 New Books We Recommend This Week</p>
-                        </div>
-                        <div class="intro">
-                            <h3 class="intro__title">Trending</h3>
-                            <div class="intro__image">
-                                <img class="image" srcset="./images/content/image43.png 2x" alt="" class="image" />
-                            </div>
-                            <p class="intro__desc">Best-Trending Lists: March 20, 2022</p>
-                        </div>
-                        <div class="intro">
-                            <h3 class="intro__title">Fiction</h3>
-                            <div class="intro__image">
-                                <img class="image" srcset="./images/content/image44.png 2x" alt="" class="image" />
-                            </div>
-                            <p class="intro__desc">The Long Shadow of Sandy Hook</p>
-                        </div>
-                    </div>
-                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
     <!-- CONTENT : END -->
 
     <!-- FOOTER : START -->
@@ -184,7 +185,7 @@
             <div class="footer__contact">
                 <div class="contact-icon">
                     <a href="#" class="icon-link">                    
-                        <img srcset="./images/contact-fb.png 2x" alt="">
+                        <img srcset="./assets/images/contact-fb.png 2x" alt="">
                     </a>
                 </div>
                 <div class="contact-btn"><a href="#" class="btn contact-link">CONTACT</a></div>

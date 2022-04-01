@@ -1,0 +1,356 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 7rem;
+}
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+}
+@media (max-width: 767px) {
+  html {
+    font-size: 47%;
+  }
+}
+
+body {
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: "Manrope", sans-serif;
+  background-color: #FEFEC5;
+  color: #000000;
+  overflow-x: hidden;
+  line-height: 1.5;
+}
+
+section,
+header,
+footer {
+  max-width: 192rem;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+  font-weight: 700;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+dl,
+dt,
+dd,
+table,
+tr,
+td,
+figure,
+figcaption,
+label {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  display: inline-block;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+a:focus, a:active {
+  outline: none !important;
+}
+
+button {
+  cursor: pointer;
+}
+button:focus, button:active, button:hover, button:visited, button:link {
+  outline: none;
+  border: none;
+  border-radius: 0px;
+}
+
+.section-header {
+  padding-top: 1rem;
+  padding-right: 2rem;
+  background-color: #FEFEC5;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+.navbar {
+  padding: 0 7.5rem 0 0.6rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+}
+@media (max-width: 991px) {
+  .navbar {
+    align-items: center;
+  }
+}
+
+.navbar__logo {
+  flex-grow: 5;
+}
+.navbar__logo .logo-link {
+  display: flex;
+}
+
+.navbar__text {
+  flex-grow: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+@media (max-width: 991px) {
+  .navbar__text {
+    position: absolute;
+    top: 110%;
+    right: 2rem;
+    padding: 1rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 0.3rem;
+  }
+}
+
+.navbar__list {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  margin-top: 1.2rem;
+}
+@media (max-width: 991px) {
+  .navbar__list {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.navbar__list .nav-link {
+  padding: 1.2rem 3.4rem;
+  font-weight: 700;
+}
+
+.navbar__login {
+  font-size: 1.8rem;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #000000;
+  gap: 1rem;
+  text-transform: uppercase;
+}
+.navbar__login .nav-link {
+  padding: 0.3rem;
+}
+
+.menu-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  width: 3rem;
+  height: 3rem;
+  background-color: gray;
+  border-radius: 0.3rem;
+  color: white;
+  cursor: pointer;
+}
+@media (min-width: 992px) {
+  .menu-icon {
+    display: none;
+  }
+}
+
+.section-header.view .navbar {
+  padding-right: 0rem;
+}
+.section-header.view .navbar__text {
+  justify-content: flex-end;
+}
+.section-header.view .login,
+.section-header.view .register {
+  font-size: 1.8rem;
+  text-decoration: underline;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.section__hero-image {
+  margin-top: 11.3rem;
+  background-image: url("../images/hero-image.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 10.6rem;
+}
+
+.view__wraper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  gap: 2.5rem;
+  padding: 4.5rem;
+}
+
+.view__book {
+  width: 30%;
+}
+
+.book__image {
+  position: relative;
+}
+.book__image::before {
+  content: "";
+  display: block;
+  padding-top: 71.1%;
+}
+.book__image .image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.book__desc {
+  font-size: 0.7rem;
+  color: rgba(0, 0, 0, 0.5);
+  margin-top: 0.5rem;
+}
+
+.book__rating {
+  padding-top: 1.5rem;
+}
+.book__rating .book__rating-box {
+  border-right: 1px solid rgba(0, 0, 0, 0.3);
+  padding-right: 1rem;
+  padding-bottom: 2rem;
+}
+.book__rating .rating__desc {
+  font-size: 0.8rem;
+  padding-bottom: 1rem;
+}
+.book__rating .rating__desc .rating-icon {
+  margin-right: 0.5rem;
+  background-color: white;
+  color: yellow;
+}
+.book__rating .comments__wraper .comment-title {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  font-weight: 700;
+}
+.book__rating .comment {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  padding: 1rem 0;
+  gap: 0 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+.book__rating .comment .avatar-img {
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 50%;
+}
+.book__rating .comment .commment__author-name {
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+.book__rating .comment .comment__time {
+  font-size: 0.5rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+.book__rating .comment .comment__content {
+  font-size: 0.7rem;
+  padding: 0.5rem 0;
+  text-align: justify;
+}
+.book__rating .comment .comment__loadmore {
+  font-size: 0.6rem;
+  font-weight: 700;
+}
+.book__rating .comment .comment__recommended {
+  margin-right: 1rem;
+}
+
+.view__content {
+  width: 70%;
+}
+.view__content .view__title {
+  font-size: 2rem;
+}
+.view__content .view__time span {
+  font-size: 0.8rem;
+  color: rgba(0, 0, 0, 0.37);
+}
+.view__content .view__time span + span {
+  margin-left: 35rem;
+}
+.view__content .view__content-desc {
+  margin-top: 2rem;
+}
+.view__content .view__content-desc strong {
+  font-size: 1.6rem;
+}
+.view__content .view__content-desc p {
+  padding: 1rem 0;
+}
+
+.buy__book {
+  text-align: center;
+  padding-top: 5rem;
+}
+.buy__book-link {
+  padding: 0.45rem 2.85rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  background-color: #4399C9;
+  text-transform: uppercase;
+}
+
+/*# sourceMappingURL=style_02.css.map */

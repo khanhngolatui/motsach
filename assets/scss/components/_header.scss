@@ -1,0 +1,133 @@
+
+// GUEST PAGE 
+.section-header {
+    padding-top : 1rem;
+    padding-right: 2rem;
+    background-color: $color-background;
+    position: fixed;
+    top:0 ; left: 0; right: 0;
+    z-index: 999;
+}
+
+.navbar {
+    padding: 0 7.5rem 0 0.6rem;
+    @include flex();
+    @include for-size(991) {
+        align-items: center;
+    }
+}
+.navbar__logo {
+    flex-grow: 5;
+    .logo-link {
+        display: flex;
+    }
+}
+.navbar__text {
+    flex-grow: 1;
+    @include flex(flex-start, space-between);
+    @include for-size(991) {
+        position: absolute;
+        top: 110%;
+        right: 2rem;
+        padding: 1rem;
+        flex-direction: column;
+        align-items: center;
+        justify-content : center;
+        background-color: white;
+        border-radius: 0.3rem;
+    }
+}
+
+.navbar__list {
+    @include flex() ; 
+    margin-top: 1.2rem;
+    @include for-size(991) {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .nav-link {
+        padding: 1.2rem 3.4rem;
+        font-weight: 700;
+    }
+}
+
+.navbar__login {
+    font-size: 1.8rem;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $color-text;
+    gap: 1rem;
+    text-transform: uppercase;
+    .nav-link {
+        padding: 0.3rem ;
+    }
+}
+
+.menu-icon {
+    @include flex(center,center);
+    width: 3rem;
+    height: 3rem;
+    background-color: gray;
+    border-radius: 0.3rem;
+    color: white;
+    cursor: pointer;
+    @include for-size(992) {
+        display: none;
+    }
+}
+
+// VIEW & BOOK : INFORMATION 
+.section-header.view {
+    .navbar {
+        padding-right: 0rem;
+    }
+    .navbar__text {
+        justify-content: flex-end;
+    }
+    .login, 
+    .register {
+        font-size: 1.8rem;
+        text-decoration: underline;
+        text-transform: uppercase;
+        font-weight: 400;
+    }
+}
+
+// REGISTER 
+.section-header.register {
+    .login, 
+    .register {
+        font-size: 1.8rem;
+        text-decoration: underline;
+        text-transform: uppercase;
+        font-weight: 800;
+    }
+    .navbar__logo {
+        height: 10.1rem;
+    }
+    // .navbar__list {
+    //     display: block;
+    //     // flex-direction: row;
+    //     // background-color: $color-background;
+    //     // margin-top: 0;
+    // }
+    // .navbar__text {
+    //     @include for-size(991) {
+    //         display: block;
+    //         position: absolute;
+    //         top: 0;
+    //         right: 0rem;
+    //         padding: 0rem;
+    //         flex-direction: row;
+    //         align-items: center;
+    //         justify-content : center;
+    //         background-color: $color-background;
+    //         border-radius: 0.3rem;
+    //     }
+    // }
+}
+
+
