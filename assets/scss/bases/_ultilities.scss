@@ -7,3 +7,20 @@
 //     }
 // }
 
+.btn {
+    padding: 0.6rem 3rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.7rem;
+    background-color: $color-03;
+    border-radius: 0.5rem;
+    outline: none;
+    border: none;
+    &:hover {
+        outline: none;
+        border-radius: 0.5rem;
+    }
+    &:active {
+        outline: none;
+    }
+}

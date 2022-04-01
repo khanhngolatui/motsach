@@ -123,3 +123,56 @@
         text-transform: uppercase   ;
     }
 }
+
+
+// VIEW TWO 
+.section-view.view-two {
+    .comment + .comment {
+        padding-left: 2rem;
+    }
+    .view__more {
+        margin-top: 1rem;
+        text-align: center;
+        font-size: 0.6rem;
+        font-weight: 700;
+        .view__more-link {
+            text-decoration: underline;
+        }
+    }
+}
+
+.commtent__control {
+    .comment__form {
+        @include flex(center, center);
+        gap: 2rem;
+        padding: 0 2rem;
+        .label-name {
+            font-size: 0.8rem;
+            font-weight: 700;
+        }
+        .label-comment {
+            font-size: 0.5rem;
+        } 
+        .input-name {
+            font-size: 0.8rem;
+        }
+        .input-comment {
+            font-size: 0.5rem;
+        }
+        input {
+            outline: none;
+            border-width:  0;
+            background-color: transparent;
+            border-bottom-width:  1px;
+        }
+    } 
+    .control__buy {
+        margin-top: 3rem;
+        @include flex(center, center);
+        gap: 4rem;
+        select {
+            appearance: none;
+            cursor: pointer;
+        }
+    }
+}
