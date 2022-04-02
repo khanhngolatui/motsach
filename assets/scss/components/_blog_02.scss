@@ -1,0 +1,58 @@
+.blogtwo__wraper {
+    padding: 7.8rem 5rem 0 1rem;
+    font-size: 1.9rem;
+    font-weight: 700;
+    @include flex();
+    gap: 3rem;
+    .blogtwo__menu {
+        width: 20%;
+        .menu-item + .menu-item {
+            margin-top: 3rem;
+        }
+
+    }
+    .blogtwo__form {
+        width: 80%;
+    }
+}
+
+.blogtwo__form {
+    padding-top: 2rem;
+    .blogtwo__control {
+        text-align: right;
+        button + button {
+            margin-left: 3rem;
+        }
+    }
+    .blogtwo__box {
+        margin-top: 3rem;
+        border: 1px solid $color-text;
+        background-color: $color-background-blog;
+        padding: 1rem 1rem 5rem;
+        .box__title {
+            padding-bottom: 2rem;
+        }
+        .input__border-none {
+            width: 50%;
+        }
+        .box__content-main {
+            padding: 0 2rem;
+            @include flex();
+            gap: 2rem;
+        }
+        .box__image {
+            text-align: center;
+        }
+        .image__block {
+            margin-bottom: 2rem;
+        }
+        .content {
+            border: 1px solid $color-text;
+            padding: 1rem;
+            flex-grow: 1;
+            height: 40rem;
+        }
+    }
+}
+
+

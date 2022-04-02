@@ -25,6 +25,7 @@
             border-radius: 5px;
             border-width: 1px;
             outline: none;  
+            padding: 1rem;
         }
     }
     .menu__list {
@@ -35,15 +36,6 @@
     }
     .menu__item + .menu__item{
         margin-top: 0.5rem;
-    }
-    .menu__item-link {
-        display: block;
-        padding: 1.6rem ;
-        background-color: $color-01;
-        border-radius: 0px 12px 12px 0px;   
-    }
-    .menu__item-link.active {
-       background-color: $color-02; 
     }
     .navbar-collapse {
         padding-left: 3.9rem;

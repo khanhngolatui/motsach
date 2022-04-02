@@ -127,6 +127,9 @@
 
 // VIEW TWO 
 .section-view.view-two {
+    .view__book {
+        flex-grow: 1;
+    }
     .comment + .comment {
         padding-left: 2rem;
     }
@@ -144,8 +147,15 @@
 .commtent__control {
     .comment__form {
         @include flex(center, center);
+        @include for-size(991);
+        flex-wrap: wrap;
         gap: 2rem;
         padding: 0 2rem;
+        .control__input-name,
+        .control__input-comment {
+            display: inline-flex;
+            align-items: center;
+        }
         .label-name {
             font-size: 0.8rem;
             font-weight: 700;
@@ -153,11 +163,13 @@
         .label-comment {
             font-size: 0.5rem;
         } 
-        .input-name {
+        #input-name {
             font-size: 0.8rem;
+            height: 1rem;
         }
-        .input-comment {
+        #input-comment {
             font-size: 0.5rem;
+            height: 0.5rem;
         }
         input {
             outline: none;
@@ -168,7 +180,7 @@
     } 
     .control__buy {
         margin-top: 3rem;
-        @include flex(center, center);
+        @include flex(center, center, wrap);
         gap: 4rem;
         select {
             appearance: none;

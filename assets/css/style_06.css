@@ -423,6 +423,9 @@ input {
   text-transform: uppercase;
 }
 
+.section-view.view-two .view__book {
+  flex-grow: 1;
+}
 .section-view.view-two .comment + .comment {
   padding-left: 2rem;
 }
@@ -441,8 +444,14 @@ input {
   align-items: center;
   justify-content: center;
   flex-wrap: nowrap;
+  flex-wrap: wrap;
   gap: 2rem;
   padding: 0 2rem;
+}
+.commtent__control .comment__form .control__input-name,
+.commtent__control .comment__form .control__input-comment {
+  display: inline-flex;
+  align-items: center;
 }
 .commtent__control .comment__form .label-name {
   font-size: 0.8rem;
@@ -451,11 +460,13 @@ input {
 .commtent__control .comment__form .label-comment {
   font-size: 0.5rem;
 }
-.commtent__control .comment__form .input-name {
+.commtent__control .comment__form #input-name {
   font-size: 0.8rem;
+  height: 1rem;
 }
-.commtent__control .comment__form .input-comment {
+.commtent__control .comment__form #input-comment {
   font-size: 0.5rem;
+  height: 0.5rem;
 }
 .commtent__control .comment__form input {
   outline: none;
@@ -468,7 +479,7 @@ input {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   gap: 4rem;
 }
 .commtent__control .control__buy select {

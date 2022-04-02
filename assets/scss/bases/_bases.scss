@@ -79,6 +79,7 @@ a {
     color:  inherit;
     display: inline-block;
     text-decoration: none;
+    cursor: pointer;
     &:hover {
         text-decoration: none;
 
@@ -98,10 +99,10 @@ button {
     &:link {
         outline: none;
         border: none;
-        border-radius: 0px;
     }
 }
 
 input {
+    outline: none;
     cursor: pointer;
 }
